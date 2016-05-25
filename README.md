@@ -2,6 +2,8 @@
 
 gitlab-ciからSphinxでビルドする用につくったDockerイメージです。
 
+baseのイメージは、python:3.5.1を利用し、sphinxやplatnuml、blockdiagを追加しています。
+
 # installed package
 
 導入済みのもの
