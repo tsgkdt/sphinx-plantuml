@@ -6,6 +6,8 @@ Some useful sphinxcontrib packages and theme are included.
 
 [![](https://imagelayers.io/badge/tsgkadot/sphinx-plantuml:latest.svg)](https://imagelayers.io/?images=tsgkadot/sphinx-plantuml:latest 'Get your own badge on imagelayers.io')
 
+[日本語はこちら](https://github.com/tsgkdt/sphinx-plantuml/blob/master/README_ja.md)
+
 ## base image
 
 python:3.5.1 (official image)
