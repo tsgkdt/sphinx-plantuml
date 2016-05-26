@@ -2,7 +2,7 @@ FROM python:3.5.1
 
 MAINTAINER tsgkdt <tsgkadot@gmail.com>
 
-RUN apt-get update && apt-get install -y \
+RUN apt-get clean && apt-get update && apt-get install -y \
     default-jre \
     graphviz
 
