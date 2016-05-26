@@ -1,12 +1,14 @@
-# sphinx docker image for gitlab-ci
+# About this docker image
 
-gitlab-ciからSphinxでビルドする用につくったDockerイメージです。
+This image was made for build sphinx documents. Target CI-software is gitlab-ci.
 
-baseのイメージは、python:3.5.1を利用し、sphinxやplatnuml、blockdiagを追加しています。
+Some useful sphinxcontrib packages and theme are included.
 
-# installed package
+## base image
 
-導入済みのもの
+python:3.5.1 (official image)
+
+## additional installed package
 
 - sphinx
 - sphinxcontrib-blockdiag
@@ -15,35 +17,36 @@ baseのイメージは、python:3.5.1を利用し、sphinxやplatnuml、blockdia
 - sphinxcontrib-seqdiag
 - sphinxcontrib-plantuml
 
-plantumlを動作させるのに必要なもの
+## installed software (for using plantuml)
 
 - java
 - graphviz
 
-# installed theme
+## installed theme
+
+Nice bootstrap theme is included.
 
 - sphinxbootstrap4theme
 
+see [original document](https://github.com/myyasuda/sphinxbootstrap4theme)
 
 # plantuml location
 
 - /usr/local/plantuml/plantuml.jar
 
-環境変数 $PLANTUMLとしてjarの場所を指定してあります。
 ```sh
 echo $PLANTUML
 
 ```
 
-# setting for conf.py
 
-```py
-# example
-extensions = [
-  'sphinxcontrib.plantuml',
-  'sphinxcontrib.blockdiag'
-]
+# sample project and build output image
 
-plantjar = os.getenv('PLANTUML')
-plantuml = 'java -jar %s' % plantjar
-```
+- sample sphinx project and gitlab-ci.yml
+
+  see [gitlab repogitory](https://gitlab.com/tsgkdt/sphinx-plantuml/)
+  
+- output image
+
+  see [gitlab pages](https://tsgkdt.gitlab.io/sphinx-plantuml/)
+  
