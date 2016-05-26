@@ -4,6 +4,8 @@ This image was made for build sphinx documents. Target CI-software is gitlab-ci.
 
 Some useful sphinxcontrib packages and theme are included.
 
+[![](https://imagelayers.io/badge/tsgkadot/sphinx-plantuml:latest.svg)](https://imagelayers.io/?images=tsgkadot/sphinx-plantuml:latest 'Get your own badge on imagelayers.io')
+
 ## base image
 
 python:3.5.1 (official image)
