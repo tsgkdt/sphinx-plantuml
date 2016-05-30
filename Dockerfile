@@ -4,10 +4,9 @@ MAINTAINER tsgkdt <tsgkadot@gmail.com>
 
 RUN apt-get clean && apt-get update && apt-get install -y \
     default-jre \
-    graphviz
-
-RUN java -version
-
+    graphviz \
+    texlive \
+    texlive-lang-cjk
 
  
 #PlantUML
