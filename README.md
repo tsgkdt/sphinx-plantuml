@@ -8,6 +8,8 @@ Some useful sphinxcontrib packages and theme are included.
 
 [日本語はこちら](https://github.com/tsgkdt/sphinx-plantuml/blob/master/README_ja.md)
 
+If you need latex/pdf output, use tsgkadot/sphinx-plantuml:tex image.
+
 ## base image
 
 python:3.5.1 (official image)
