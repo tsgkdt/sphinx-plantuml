@@ -22,12 +22,12 @@ python:3.5.1 (公式イメージ)
 
 ## 導入済みパッケージ
 
-- sphinx
-- sphinxcontrib-blockdiag
-- sphinxcontrib-actdiag
-- sphinxcontrib-nwdiag
-- sphinxcontrib-seqdiag
-- sphinxcontrib-plantuml
+- sphinx 1.4.2
+- sphinxcontrib-blockdiag 1.5.5
+- sphinxcontrib-actdiag 0.8.5
+- sphinxcontrib-nwdiag 0.9.5
+- sphinxcontrib-seqdiag 0.8.5
+- sphinxcontrib-plantuml 0.8.1
 
 ## 導入済みソフトウェア (plantumlに必要)
 
@@ -40,7 +40,7 @@ plantumlでは、javaとgraphvizが必要です。
 
 見た目がナウいbootstrapのテーマを入れています。ご利用ください。
 
-- sphinxbootstrap4theme
+- sphinxbootstrap4theme 0.3.0
 
 参考 [original document](https://github.com/myyasuda/sphinxbootstrap4theme)
 

@@ -16,12 +16,12 @@ python:3.5.1 (official image)
 
 ## additional installed package
 
-- sphinx
-- sphinxcontrib-blockdiag
-- sphinxcontrib-actdiag
-- sphinxcontrib-nwdiag
-- sphinxcontrib-seqdiag
-- sphinxcontrib-plantuml
+- sphinx 1.4.2
+- sphinxcontrib-blockdiag 1.5.5
+- sphinxcontrib-actdiag 0.8.5
+- sphinxcontrib-nwdiag 0.9.5
+- sphinxcontrib-seqdiag 0.8.5
+- sphinxcontrib-plantuml 0.8.1
 
 ## installed software (for using plantuml)
 
@@ -32,7 +32,7 @@ python:3.5.1 (official image)
 
 Nice bootstrap theme is included.
 
-- sphinxbootstrap4theme
+- sphinxbootstrap4theme 0.3.0
 
 see [original document](https://github.com/myyasuda/sphinxbootstrap4theme)
 
