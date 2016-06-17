@@ -4,17 +4,11 @@ gitlab-ciでSphinxのドキュメントをビルドするためのイメージ�
 
 blockdiagやplantuml、有用なテーマを同梱しています。
 
-[![](https://imagelayers.io/badge/tsgkadot/sphinx-plantuml:latest.svg)](https://imagelayers.io/?images=tsgkadot/sphinx-plantuml:latest 'Get your own badge on imagelayers.io')
-
-
 毎回、gitlab-ci.ymlでpip instalやapt-get installを繰り返せば、このイメージを利用せずとも同じことが可能ですが、
 時間効率のために、必要なパッケージを含めたDockerイメージとしてます。
 
 sphinxのソースファイルを書くことに専念するために、ビルド環境についてはオールインワンにした、というところです。
 
-PDF出力が必要であるなら、texを用意したイメージの方を利用してください。このイメージには含まれていません。
-
-tex入りの方は、tsgkadot/sphinx-plantuml:tex で取得できます。
 
 ## base image
 
@@ -29,10 +23,11 @@ python:3.5.1 (公式イメージ)
 - sphinxcontrib-seqdiag 0.8.5
 - sphinxcontrib-plantuml 0.8.1
 
-## 導入済みソフトウェア (plantumlに必要)
+## 導入済みソフトウェア
 
 - java
 - graphviz
+- texlive
 
 plantumlでは、javaとgraphvizが必要です。
 
@@ -40,7 +35,7 @@ plantumlでは、javaとgraphvizが必要です。
 
 見た目がナウいbootstrapのテーマを入れています。ご利用ください。
 
-- sphinxbootstrap4theme 0.3.0
+- sphinxbootstrap4theme 0.4.2
 
 参考 [original document](https://github.com/myyasuda/sphinxbootstrap4theme)
 
@@ -64,8 +59,4 @@ gitlab-ci.ymlやconf.pyの記載内容の参考にしてください。gitlab.io
 - サンプルSphinxプロジェクトとgitlab-ciの例
 
   see [gitlab repogitory](https://gitlab.com/tsgkdt/sphinx-plantuml/)
-  
-- 上記でビルド結果された内容
-
-  see [gitlab pages](https://tsgkdt.gitlab.io/sphinx-plantuml/)
   

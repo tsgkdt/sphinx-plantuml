@@ -4,11 +4,10 @@ This image was made for build sphinx documents. Target CI-software is gitlab-ci.
 
 Some useful sphinxcontrib packages and theme are included.
 
-[![](https://imagelayers.io/badge/tsgkadot/sphinx-plantuml:latest.svg)](https://imagelayers.io/?images=tsgkadot/sphinx-plantuml:latest 'Get your own badge on imagelayers.io')
+If you need latex/pdf output, use tsgkadot/sphinx-plantuml:tex image.
 
 [日本語はこちら](https://github.com/tsgkdt/sphinx-plantuml/blob/master/README_ja.md)
 
-If you need latex/pdf output, use tsgkadot/sphinx-plantuml:tex image.
 
 ## base image
 
@@ -23,16 +22,17 @@ python:3.5.1 (official image)
 - sphinxcontrib-seqdiag 0.8.5
 - sphinxcontrib-plantuml 0.8.1
 
-## installed software (for using plantuml)
+## installed software
 
-- java
-- graphviz
+- java (for plantuml)
+- graphviz (for plantuml)
+- texlive (for output latex/pdf)
 
 ## installed theme
 
 Nice bootstrap theme is included.
 
-- sphinxbootstrap4theme 0.3.0
+- sphinxbootstrap4theme 0.4.2
 
 see [original document](https://github.com/myyasuda/sphinxbootstrap4theme)
 
@@ -51,8 +51,4 @@ echo $PLANTUML
 - sample sphinx project and gitlab-ci.yml
 
   see [gitlab repogitory](https://gitlab.com/tsgkdt/sphinx-plantuml/)
-  
-- output image
-
-  see [gitlab pages](https://tsgkdt.gitlab.io/sphinx-plantuml/)
   

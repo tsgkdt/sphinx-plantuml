@@ -6,6 +6,7 @@ RUN apt-get clean && apt-get update && apt-get install -y \
     default-jre \
     graphviz \
     texlive \
+    texlive-generic-extra \
     texlive-lang-cjk
 
  
