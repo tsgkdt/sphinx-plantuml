@@ -32,7 +32,7 @@ python:3.5.1 (official image)
 
 Nice bootstrap theme is included.
 
-- sphinxbootstrap4theme 0.4.2
+- sphinxbootstrap4theme 0.4.3
 
 see [original document](https://github.com/myyasuda/sphinxbootstrap4theme)
 
