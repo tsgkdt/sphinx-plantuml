@@ -4,12 +4,9 @@ MAINTAINER tsgkdt <tsgkadot@gmail.com>
 
 RUN apt-get clean && apt-get update && apt-get install -y \
     default-jre \
-    graphviz \
-    texlive \
-    texlive-generic-extra \
-    texlive-lang-cjk
+    graphviz
 
- 
+
 #PlantUML
 ENV PLANTUML_DIR /usr/local/plantuml
 ENV PLANTUML_JAR plantuml.jar
