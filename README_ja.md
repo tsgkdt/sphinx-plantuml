@@ -10,13 +10,22 @@ blockdiagやplantuml、有用なテーマを同梱しています。
 sphinxのソースファイルを書くことに専念するために、ビルド環境についてはオールインワンにした、というところです。
 
 
+## 単独での使い方
+
+ソースファイルがカレントディレクトリの下、sourceフォルダにあると仮定して、これをビルドする例です。
+
+```sh
+docker run --rm -v `pwd`:/tmp/sphinx --name sphinx sphinx-plantuml:alpine sphinx-build -b html /tmp/sphinx/source /tmp/sphinx/build
+```
+
+
 ## base image
 
-python:3.5.1 (公式イメージ)
+python:3.5.1-alpine (公式イメージ)
 
 ## 導入済みパッケージ
 
-- sphinx 1.4.2
+- sphinx 1.4.4
 - sphinxcontrib-blockdiag 1.5.5
 - sphinxcontrib-actdiag 0.8.5
 - sphinxcontrib-nwdiag 0.9.5
@@ -27,7 +36,6 @@ python:3.5.1 (公式イメージ)
 
 - java
 - graphviz
-- texlive
 
 plantumlでは、javaとgraphvizが必要です。
 
