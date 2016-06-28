@@ -5,7 +5,7 @@ FROM python:3.5.1-alpine
 
 MAINTAINER tsgkdt <tsgkadot@gmail.com>
 
-RUN apk --no-cache add openjdk7-jre graphviz jpeg-dev zlib-dev ttf-dejavu && \
+RUN apk --no-cache add openjdk8-jre graphviz jpeg-dev zlib-dev ttf-dejavu freetype-dev && \
     apk --no-cache --virtual=dependencies add build-base python-dev py-pip wget
 
 ENV LIBRARY_PATH=/lib:/usr/lib
@@ -14,9 +14,17 @@ ENV PLANTUML_DIR /usr/local/plantuml
 ENV PLANTUML_JAR plantuml.jar
 ENV PLANTUML $PLANTUML_DIR/$PLANTUML_JAR
 
-RUN mkdir $PLANTUML_DIR && \
+RUN \
+    #PlantUML
+    mkdir $PLANTUML_DIR && \
     wget "https://sourceforge.net/projects/plantuml/files/plantuml.jar" --no-check-certificate && \
     mv plantuml.jar $PLANTUML_DIR && \
+    #TakaoFont for Japanese
+    wget "https://launchpad.net/takao-fonts/trunk/15.03/+download/TakaoFonts_00303.01.tar.xz" && \
+    tar xvf TakaoFonts_00303.01.tar.xz -C /usr/share/fonts/ && \
+    rm -f TakaoFonts_00303.01.tar.xz && \
+    ln -s /usr/share/fonts/TakaoFonts_00303.01 /usr/share/fonts/TakaoFonts && \
+    #Upgrade pip
     pip install --upgrade pip && \
     #Install Sphinx with Nice Theme&Extention
     pip install -U \
