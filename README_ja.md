@@ -60,6 +60,14 @@ echo $PLANTUML
 
 ```
 
+## Installed Fonts
+
+- [TakaoFonts_00303.01](https://launchpad.net/takao-fonts)
+
+Takaoフォントは以下にあります。　blockdiagで日本語を使用する場合など、ttfフォントの指定が必要となるときにお使いいただけます。
+
+/usr/share/fonts/TakaoFonts/
+
 # 参考情報
 
 gitlab-ci.ymlやconf.pyの記載内容の参考にしてください。gitlab.ioでは、ビルドされた結果を表示しています。
