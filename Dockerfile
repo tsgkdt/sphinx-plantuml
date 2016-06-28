@@ -1,32 +1,40 @@
-FROM python:3.5.1
+#For example
+#docker run --rm -v `pwd`:/tmp/sphinx --name sphinx sphinx-plantuml:alpine sphinx-build -b html /tmp/sphinx/source /tmp/sphinx/build
+
+FROM python:3.5.1-alpine
 
 MAINTAINER tsgkdt <tsgkadot@gmail.com>
 
-RUN apt-get clean && apt-get update && apt-get install -y \
-    default-jre \
-    graphviz
+RUN apk --no-cache add openjdk8-jre graphviz jpeg-dev zlib-dev ttf-dejavu freetype-dev && \
+    apk --no-cache --virtual=dependencies add build-base python-dev py-pip wget
 
-
+ENV LIBRARY_PATH=/lib:/usr/lib
 #PlantUML
 ENV PLANTUML_DIR /usr/local/plantuml
 ENV PLANTUML_JAR plantuml.jar
 ENV PLANTUML $PLANTUML_DIR/$PLANTUML_JAR
 
-RUN mkdir $PLANTUML_DIR
-RUN wget "https://sourceforge.net/projects/plantuml/files/plantuml.jar"
-RUN cp plantuml.jar $PLANTUML_DIR
-
-RUN pip install --upgrade pip
-
-#Install Sphinx with Nice Theme&Extention
-RUN pip install -U \
+RUN \
+    #PlantUML
+    mkdir $PLANTUML_DIR && \
+    wget "https://sourceforge.net/projects/plantuml/files/plantuml.jar" --no-check-certificate && \
+    mv plantuml.jar $PLANTUML_DIR && \
+    #TakaoFont for Japanese
+    wget "https://launchpad.net/takao-fonts/trunk/15.03/+download/TakaoFonts_00303.01.tar.xz" && \
+    tar xvf TakaoFonts_00303.01.tar.xz -C /usr/share/fonts/ && \
+    rm -f TakaoFonts_00303.01.tar.xz && \
+    ln -s /usr/share/fonts/TakaoFonts_00303.01 /usr/share/fonts/TakaoFonts && \
+    #Upgrade pip
+    pip install --upgrade pip && \
+    #Install Sphinx with Nice Theme&Extention
+    pip install -U \
     sphinx \
     sphinxbootstrap4theme \
     sphinxcontrib-blockdiag \
     sphinxcontrib-actdiag \
     sphinxcontrib-nwdiag \
     sphinxcontrib-seqdiag \
-    sphinxcontrib-plantuml
-
+    sphinxcontrib-plantuml && \
+    apk del dependencies
 
 CMD ["python3"]
