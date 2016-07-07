@@ -33,6 +33,7 @@ docker run --rm -v `pwd`:/tmp/sphinx --name sphinx sphinx-plantuml:alpine sphinx
 
 - java (for plantuml)
 - graphviz (for plantuml)
+- git (#1)
 
 ## installed theme
 

@@ -34,8 +34,9 @@ python:3.5.1-alpine (公式イメージ)
 
 ## 導入済みソフトウェア
 
-- java
-- graphviz
+- java (plantumlで使用します）
+- graphviz (plantumlで使用します）
+- git (#1)
 
 plantumlでは、javaとgraphvizが必要です。
 
