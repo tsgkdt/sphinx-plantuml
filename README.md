@@ -15,6 +15,32 @@ If you need latex/pdf output, use tsgkadot/sphinx-plantuml:tex image.(Size is to
 docker run --rm -v `pwd`:/tmp/sphinx --name sphinx sphinx-plantuml:alpine sphinx-build -b html /tmp/sphinx/source /tmp/sphinx/build
 ```
 
+## Gitlab-CI usage.
+
+Sample .gitlab.yml is bellow.
+
+```yaml
+image: tsgkadot/sphinx-plantuml:latest
+
+stages:
+  - build
+
+pages:
+  stage: build
+  script:
+    - pip install -r requirements.txt -U
+    - sphinx-build -b html ./source public
+  artifacts:
+    expire_in: 1 week
+    paths:
+      - public
+  tags:
+    - docker
+```
+
+- [.gitlab-ci.yml](https://gitlab.com/tsgkdt/sphinx-plantuml/blob/master/.gitlab-ci.yml)
+- [build result => gitlab pages](https://tsgkdt.gitlab.io/sphinx-plantuml/) 
+  
 
 ## base image
 
@@ -61,9 +87,3 @@ Installe location is below.
 /usr/share/fonts/TakaoFonts/
 
 
-# sample project and build output image
-
-- sample sphinx project and gitlab-ci.yml
-
-  see [gitlab repogitory](https://gitlab.com/tsgkdt/sphinx-plantuml/)
-  

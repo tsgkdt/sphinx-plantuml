@@ -18,6 +18,33 @@ sphinxのソースファイルを書くことに専念するために、ビル�
 docker run --rm -v `pwd`:/tmp/sphinx --name sphinx sphinx-plantuml:alpine sphinx-build -b html /tmp/sphinx/source /tmp/sphinx/build
 ```
 
+## Gitlab-CIでの使い方
+
+サンプルを示します。
+
+```yaml
+image: tsgkadot/sphinx-plantuml:latest
+
+stages:
+  - build
+
+pages:
+  stage: build
+  script:
+    - pip install -r requirements.txt -U
+    - sphinx-build -b html ./source public
+  artifacts:
+    expire_in: 1 week
+    paths:
+      - public
+  tags:
+    - docker
+```
+
+実際にビルドに使用したスクリプトとその生成物については、以下にあります。
+
+- [.gitlab-ci.yml](https://gitlab.com/tsgkdt/sphinx-plantuml/blob/master/.gitlab-ci.yml)
+- [ビルドされた結果のHTMLたち => gitlab pages](https://tsgkdt.gitlab.io/sphinx-plantuml/) 
 
 ## base image
 
