@@ -44,11 +44,11 @@ pages:
 
 ## base image
 
-- Tag: alpine  python:3.5.1-alpine(Official image)
+- Tag: alpine  python:3.5.2-alpine(Official image)
 
 ## additional installed package
 
-- sphinx 1.4.4
+- sphinx 1.4.5
 - sphinxcontrib-blockdiag 1.5.5
 - sphinxcontrib-actdiag 0.8.5
 - sphinxcontrib-nwdiag 0.9.5

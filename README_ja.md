@@ -48,11 +48,11 @@ pages:
 
 ## base image
 
-python:3.5.1-alpine (公式イメージ)
+python:3.5.2-alpine (公式イメージ)
 
 ## 導入済みパッケージ
 
-- sphinx 1.4.4
+- sphinx 1.4.5
 - sphinxcontrib-blockdiag 1.5.5
 - sphinxcontrib-actdiag 0.8.5
 - sphinxcontrib-nwdiag 0.9.5
