@@ -4,21 +4,41 @@ gitlab-ciでSphinxのドキュメントをビルドするためのtex入りイ�
 
 blockdiagやplantuml、有用なテーマを同梱しています。
 
-latexやPDF出力を行うために、texも同梱しています。
+latexやPDF出力を行うために、texも同梱しています。なので、サイズはバカでかいです。
 
 毎回、gitlab-ci.ymlでpip instalやapt-get installを繰り返せば、このイメージを利用せずとも同じことが可能ですが、
 時間効率のために、必要なパッケージを含めたDockerイメージとしてます。
 
 sphinxのソースファイルを書くことに専念するために、ビルド環境についてはオールインワンにした、というところです。
 
+# 使用例
+
+## gitlab-ciで使う場合
+
+```yaml
+sphinx-build:
+  before_script:
+    - pip install -r requirements.txt -U
+  stage: build
+  script:
+    - sphinx-build -b latex -c ./config_dir ./source_dir ./build_dir
+    - cd ./_build
+    - make all-pdf-ja
+  tags:
+    - docker
+```
+
+docker execなどで使う場合も基本は同じ。 
+
+
 
 ## base image
 
-python:3.5.1 (公式イメージ)
+python:3.5.2 (公式イメージ)
 
 ## 導入済みパッケージ
 
-- sphinx 1.4.2
+- sphinx 1.4.5
 - sphinxcontrib-blockdiag 1.5.5
 - sphinxcontrib-actdiag 0.8.5
 - sphinxcontrib-nwdiag 0.9.5
@@ -37,7 +57,7 @@ plantumlでは、javaとgraphvizが必要です。
 
 見た目がナウいbootstrapのテーマを入れています。ご利用ください。
 
-- sphinxbootstrap4theme 0.4.2
+- sphinxbootstrap4theme 0.4.3
 
 参考 [original document](https://github.com/myyasuda/sphinxbootstrap4theme)
 
