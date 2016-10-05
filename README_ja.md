@@ -52,7 +52,7 @@ python:3.5.2-alpine (公式イメージ)
 
 ## 導入済みパッケージ
 
-- sphinx 1.4.6
+- sphinx 1.4.8
 - sphinxcontrib-blockdiag 1.5.5
 - sphinxcontrib-actdiag 0.8.5
 - sphinxcontrib-nwdiag 0.9.5
