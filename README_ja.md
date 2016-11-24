@@ -2,12 +2,13 @@
 
 gitlab-ciでSphinxのドキュメントをビルドするためのイメージです。
 
-blockdiagやplantuml、有用なテーマを同梱しています。
+よく使われるblockdiagやplantuml、有用なテーマを同梱しています。
 
 毎回、gitlab-ci.ymlでpip instalやapt-get installを繰り返せば、このイメージを利用せずとも同じことが可能ですが、
 時間効率のために、必要なパッケージを含めたDockerイメージとしてます。
 
 sphinxのソースファイルを書くことに専念するために、ビルド環境についてはオールインワンにした、というところです。
+
 
 
 ## 単独での使い方
@@ -52,7 +53,7 @@ python:3.5.2-alpine (公式イメージ)
 
 ## 導入済みパッケージ
 
-- sphinx 1.4.8
+- sphinx 1.4.9
 - sphinxcontrib-blockdiag 1.5.5
 - sphinxcontrib-actdiag 0.8.5
 - sphinxcontrib-nwdiag 0.9.5
@@ -63,6 +64,7 @@ python:3.5.2-alpine (公式イメージ)
 
 - java (plantumlで使用します）
 - graphviz (plantumlで使用します）
+- plantuml（Version 8050）
 - git (#1)
 
 plantumlでは、javaとgraphvizが必要です。

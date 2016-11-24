@@ -48,7 +48,7 @@ pages:
 
 ## additional installed package
 
-- sphinx 1.4.8
+- sphinx 1.4.9
 - sphinxcontrib-blockdiag 1.5.5
 - sphinxcontrib-actdiag 0.8.5
 - sphinxcontrib-nwdiag 0.9.5
@@ -59,6 +59,7 @@ pages:
 
 - java (for plantuml)
 - graphviz (for plantuml)
+- platnuml (Version 8050)
 - git (#1)
 
 ## installed theme
