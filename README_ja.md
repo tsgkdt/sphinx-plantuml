@@ -16,7 +16,7 @@ sphinxのソースファイルを書くことに専念するために、ビル�
 ソースファイルがカレントディレクトリの下、sourceフォルダにあると仮定して、これをビルドする例です。
 
 ```sh
-docker run --rm -v `pwd`:/tmp/sphinx --name sphinx sphinx-plantuml:alpine sphinx-build -b html /tmp/sphinx/source /tmp/sphinx/build
+docker run --rm -v `pwd`:/tmp/sphinx --name sphinx sphinx-plantuml sphinx-build -b html /tmp/sphinx/source /tmp/sphinx/build
 ```
 
 ## Gitlab-CIでの使い方

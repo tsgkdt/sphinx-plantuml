@@ -12,7 +12,7 @@ If you need latex/pdf output, use tsgkadot/sphinx-plantuml:tex image.(Size is to
 ## Simple Usage
 
 ```sh
-docker run --rm -v `pwd`:/tmp/sphinx --name sphinx sphinx-plantuml:alpine sphinx-build -b html /tmp/sphinx/source /tmp/sphinx/build
+docker run --rm -v `pwd`:/tmp/sphinx --name sphinx sphinx-plantuml sphinx-build -b html /tmp/sphinx/source /tmp/sphinx/build
 ```
 
 ## Gitlab-CI usage.
