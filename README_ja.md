@@ -73,7 +73,7 @@ plantumlでは、javaとgraphvizが必要です。
 
 見た目がナウいbootstrapのテーマを入れています。ご利用ください。
 
-- sphinxbootstrap4theme 0.4.3
+- sphinxbootstrap4theme 0.5.0
 
 参考 [original document](https://github.com/myyasuda/sphinxbootstrap4theme)
 

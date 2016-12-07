@@ -66,7 +66,7 @@ pages:
 
 Nice bootstrap theme is included.
 
-- sphinxbootstrap4theme 0.4.3
+- sphinxbootstrap4theme 0.5.0
 
 see [original document](https://github.com/myyasuda/sphinxbootstrap4theme)
 
