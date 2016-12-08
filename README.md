@@ -64,11 +64,17 @@ pages:
 
 ## installed theme
 
-Nice bootstrap theme is included.
+Nice bootstrap / Material Design themes are included.
 
-- sphinxbootstrap4theme 0.5.0
+| theme | version | remarks |
+|:------|---------|----------:|
+| [sphinxbootstrap4theme](https://github.com/myyasuda/sphinxbootstrap4theme) | 0.5.0 | Bootstrap theme |
+| [sphinx_materialdesign_theme](https://github.com/myyasuda/sphinx_materialdesign_theme) | 0.2.0 | material design theme |
 
-see [original document](https://github.com/myyasuda/sphinxbootstrap4theme)
+These theme's demo sites are below.
+
+- [Bootstrap Theme Demo Site](https://myyasuda.github.io/sphinxbootstrap4theme/)
+- [Material Design Theme Demo Site](https://myyasuda.github.io/sphinx_materialdesign_theme/)
 
 # plantuml location
 

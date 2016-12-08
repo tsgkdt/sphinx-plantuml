@@ -73,9 +73,17 @@ plantumlでは、javaとgraphvizが必要です。
 
 見た目がナウいbootstrapのテーマを入れています。ご利用ください。
 
-- sphinxbootstrap4theme 0.5.0
+| theme | version | remarks |
+|:------|---------|----------:|
+| [sphinxbootstrap4theme](https://github.com/myyasuda/sphinxbootstrap4theme) | 0.5.0 | Bootstrapテーマです |
+| [sphinx_materialdesign_theme](https://github.com/myyasuda/sphinx_materialdesign_theme) | 0.2.0 | マテリアルデザインに準じたテーマです |
 
-参考 [original document](https://github.com/myyasuda/sphinxbootstrap4theme)
+
+テーマの利用イメージは下記のデモサイトをご覧ください。
+
+- [Bootstrap Theme Demo Site](https://myyasuda.github.io/sphinxbootstrap4theme/)
+- [Material Design Theme Demo Site](https://myyasuda.github.io/sphinx_materialdesign_theme/)
+
 
 # plantuml location
 

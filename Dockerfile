@@ -30,6 +30,7 @@ RUN \
     pip install -U \
     sphinx \
     sphinxbootstrap4theme \
+    sphinx_materialdesign_theme \
     sphinxcontrib-blockdiag \
     sphinxcontrib-actdiag \
     sphinxcontrib-nwdiag \
