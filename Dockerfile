@@ -1,7 +1,7 @@
 #For example
 #docker run --rm -v `pwd`:/tmp/sphinx --name sphinx sphinx-plantuml sphinx-build -b html /tmp/sphinx/source /tmp/sphinx/build
 
-FROM python:3.5.2-alpine
+FROM python:3.6-alpine
 
 MAINTAINER tsgkdt <tsgkadot@gmail.com>
 
