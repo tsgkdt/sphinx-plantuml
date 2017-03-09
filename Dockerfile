@@ -28,6 +28,7 @@ RUN \
     pip install --upgrade pip && \
     #Install Sphinx with Nice Theme&Extention
     pip install -U \
+    appdirs \
     sphinx \
     sphinxbootstrap4theme \
     sphinx_materialdesign_theme \
@@ -36,6 +37,8 @@ RUN \
     sphinxcontrib-nwdiag \
     sphinxcontrib-seqdiag \
     sphinxcontrib-plantuml && \
+    # for Build Infomation
+    pip freeze && \ 
     apk del dependencies
 
 CMD ["python3"]
