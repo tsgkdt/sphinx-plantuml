@@ -53,7 +53,7 @@ pages:
 - sphinxcontrib-actdiag 0.8.5
 - sphinxcontrib-nwdiag 0.9.5
 - sphinxcontrib-seqdiag 0.8.5
-- sphinxcontrib-plantuml 0.8.1
+- sphinxcontrib-plantuml 0.0.10
 
 ## installed software
 
