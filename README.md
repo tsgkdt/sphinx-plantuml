@@ -69,7 +69,7 @@ Nice bootstrap / Material Design themes are included.
 | theme | version | remarks |
 |:------|---------|----------:|
 | [sphinxbootstrap4theme](https://github.com/myyasuda/sphinxbootstrap4theme) | 0.5.0 | Bootstrap theme |
-| [sphinx_materialdesign_theme](https://github.com/myyasuda/sphinx_materialdesign_theme) | 0.0.5 | material design theme |
+| [sphinx_materialdesign_theme](https://github.com/myyasuda/sphinx_materialdesign_theme) | 0.0.6 | material design theme |
 
 These theme's demo sites are below.
 
