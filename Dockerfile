@@ -5,7 +5,7 @@ FROM python:3.6-alpine
 
 LABEL  maintainer tsgkdt <tsgkadot@gmail.com>
 
-COPY requirements.txt /tmp/requirements.txt
+COPY requirements.txt .
 
 RUN apk --no-cache add openjdk8-jre graphviz jpeg-dev zlib-dev ttf-dejavu freetype-dev git && \
     apk --no-cache --virtual=dependencies add build-base python-dev py-pip wget
@@ -29,7 +29,7 @@ RUN \
     #Upgrade pip
     pip install --upgrade pip && \
     #Install Sphinx with Nice Theme&Extention
-    pip install -U /tmp/requirements.txt && \
+    pip install -U requirements.txt && \
     # for Build Infomation
     pip freeze && \ 
     apk del dependencies
