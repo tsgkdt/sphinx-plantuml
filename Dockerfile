@@ -29,7 +29,7 @@ RUN \
     #Upgrade pip
     pip install --upgrade pip && \
     #Install Sphinx with Nice Theme&Extention
-    pip install -U requirements.txt && \
+    pip install -U -r requirements.txt && \
     # for Build Infomation
     pip freeze && \ 
     apk del dependencies
