@@ -20,6 +20,9 @@ RUN \
     #PlantUML
     mkdir $PLANTUML_DIR && \
     wget "https://sourceforge.net/projects/plantuml/files/plantuml.jar" --no-check-certificate && \
+    #Check jar file size. refs #9. normal jar file size is maybe > 5mb
+    size=$(stat -c %s plantuml.jar) && \
+    test $size -gt 5000000 && \
     mv plantuml.jar $PLANTUML_DIR && \
     #TakaoFont for Japanese
     wget "https://launchpad.net/takao-fonts/trunk/15.03/+download/TakaoFonts_00303.01.tar.xz" && \
