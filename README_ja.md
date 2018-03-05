@@ -53,7 +53,7 @@ python:3.6-alpine (公式イメージ)
 
 ## 導入済みパッケージ
 
-- sphinx 1.7.0
+- sphinx 1.7.1
 - sphinxcontrib-blockdiag 1.5.5
 - sphinxcontrib-actdiag 0.8.5
 - sphinxcontrib-nwdiag 0.9.5
@@ -64,7 +64,7 @@ python:3.6-alpine (公式イメージ)
 
 - java (plantumlで使用します）
 - graphviz (plantumlで使用します）
-- plantuml（Version 1.2018.0）
+- plantuml（Version 1.2018.1）
 - git (#1)
 
 plantumlでは、javaとgraphvizが必要です。
@@ -76,7 +76,7 @@ plantumlでは、javaとgraphvizが必要です。
 | theme | version | remarks |
 |:------|---------|----------:|
 | [sphinxbootstrap4theme](https://github.com/myyasuda/sphinxbootstrap4theme) | 0.5.0 | Bootstrapテーマです |
-| [sphinx_materialdesign_theme](https://github.com/myyasuda/sphinx_materialdesign_theme) | 0.1.1 | マテリアルデザインに準じたテーマです |
+| [sphinx_materialdesign_theme](https://github.com/myyasuda/sphinx_materialdesign_theme) | 0.1.2 | マテリアルデザインに準じたテーマです |
 
 
 テーマの利用イメージは下記のデモサイトをご覧ください。
