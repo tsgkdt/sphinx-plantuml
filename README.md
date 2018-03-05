@@ -48,7 +48,7 @@ pages:
 
 ## additional installed package
 
-- sphinx 1.7.0
+- sphinx 1.7.1
 - sphinxcontrib-blockdiag 1.5.5
 - sphinxcontrib-actdiag 0.8.5
 - sphinxcontrib-nwdiag 0.9.5
@@ -59,7 +59,7 @@ pages:
 
 - java (for plantuml)
 - graphviz (for plantuml)
-- platnuml (Version 1.2018.0)
+- platnuml (Version 1.2018.1)
 - git (#1)
 
 ## installed theme
@@ -69,7 +69,7 @@ Nice bootstrap / Material Design themes are included.
 | theme | version | remarks |
 |:------|---------|----------:|
 | [sphinxbootstrap4theme](https://github.com/myyasuda/sphinxbootstrap4theme) | 0.5.0 | Bootstrap theme |
-| [sphinx_materialdesign_theme](https://github.com/myyasuda/sphinx_materialdesign_theme) | 0.1.1 | material design theme |
+| [sphinx_materialdesign_theme](https://github.com/myyasuda/sphinx_materialdesign_theme) | 0.1.2 | material design theme |
 
 These theme's demo sites are below.
 
