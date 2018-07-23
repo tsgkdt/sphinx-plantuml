@@ -48,7 +48,7 @@ pages:
 
 ## additional installed package
 
-- sphinx 1.7.1
+- sphinx 1.7.6
 - sphinxcontrib-blockdiag 1.5.5
 - sphinxcontrib-actdiag 0.8.5
 - sphinxcontrib-nwdiag 0.9.5
